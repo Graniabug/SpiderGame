@@ -1764,14 +1764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 333828631b7bf874ea86c37b31a2fbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
-  maxVelocity: 10
-  swingForwardSpeed: 10
-  swingStrafeSpeed: 5
-  initialForce: 15
-  ropeLength: 0
-  hookAnchor: {fileID: 1162055749}
-  line: {fileID: 685712816}
 --- !u!54 &1479898219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2091,7 +2083,7 @@ GameObject:
   - component: {fileID: 1767506494}
   - component: {fileID: 1767506493}
   - component: {fileID: 1767506497}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
