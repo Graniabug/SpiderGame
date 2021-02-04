@@ -16,7 +16,6 @@ public class SpiderMove : MonoBehaviour
     public float speed = 6.0f;
     public float jumpSpeed = 5.0f;
     public float gravity = 9.0f;
-    public float swingingGravity = 0.0f;
 
     public Camera mainCamera;
     public Transform hookAnchor;
@@ -24,7 +23,7 @@ public class SpiderMove : MonoBehaviour
     public LineRenderer web;
     //public float maxVelocity = 10f;
     //public float swingForwardSpeed = 10f;
-    public float swingStrafeSpeed = 5f;
+    public float swingStrafeSpeed = 50f;
 
     private Vector3 hitPoint;
     private Vector3 moveDirection = Vector3.zero;
@@ -83,12 +82,10 @@ public class SpiderMove : MonoBehaviour
         if (!characterController.isGrounded && Swinging && transform.position.y <= hookAnchor.position.y)
         {
             print("inside fixed up 1st if");
-            moveDirection.y -= swingingGravity;
-            Debug.Log("The move direction.y = " + swingingGravity);
             if (moveDirection.x > 0 /*&& rb.velocity.y < 0f*/)
             {
-                rb.AddForce(transform.forward /** moveDirection.x*/ * swingStrafeSpeed);
-
+                rb.AddForce(transform.right /** moveDirection.x*/ * swingStrafeSpeed);
+                moveDirection.y -= gravity * Time.deltaTime;
             }
         }
         else if (!characterController.isGrounded)
