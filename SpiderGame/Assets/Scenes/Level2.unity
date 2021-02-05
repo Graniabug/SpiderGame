@@ -2283,7 +2283,7 @@ MonoBehaviour:
   hookAnchor: {fileID: 1951957538}
   ropeLength: 0
   web: {fileID: 685712816}
-  swingStrafeSpeed: 5
+  swingStrafeSpeed: 40.02
 --- !u!1 &1581878665
 GameObject:
   m_ObjectHideFlags: 0

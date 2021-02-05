@@ -82,10 +82,11 @@ public class SpiderMove : MonoBehaviour
         if (!characterController.isGrounded && Swinging && transform.position.y <= hookAnchor.position.y)
         {
             print("inside fixed up 1st if");
+            moveDirection.y = -3.0f;
+            Debug.Log(moveDirection.y);
             if (moveDirection.x > 0 /*&& rb.velocity.y < 0f*/)
             {
                 rb.AddForce(transform.right /** moveDirection.x*/ * swingStrafeSpeed);
-                moveDirection.y -= gravity * Time.deltaTime;
             }
         }
         else if (!characterController.isGrounded)
