@@ -82,7 +82,7 @@ public class SpiderMove : MonoBehaviour
         if (!characterController.isGrounded && Swinging && transform.position.y <= hookAnchor.position.y)
         {
             print("inside fixed up 1st if");
-            moveDirection.y = -3.0f;
+            moveDirection.y = -4.0f;
             Debug.Log(moveDirection.y);
             if (moveDirection.x > 0 /*&& rb.velocity.y < 0f*/)
             {
@@ -140,13 +140,15 @@ public class SpiderMove : MonoBehaviour
                 //Makes the rope longer
                 if (Input.GetKey(KeyCode.Q))
                 {
-                    ropeLength += .05f;
+                    ropeLength += .005f;
+                    Debug.Log("lengthening rope");
                 }
 
                 //Makes the rope shorter
                 if (Input.GetKey(KeyCode.E))
                 {
-                    ropeLength -= .05f;
+                    ropeLength -= .005f;
+                    Debug.Log("shortening rope");
                 }
 
                 //makes the rope shorter if the player is going to hit the ground
