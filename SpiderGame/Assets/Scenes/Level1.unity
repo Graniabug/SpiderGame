@@ -895,6 +895,7 @@ GameObject:
   - component: {fileID: 423974584}
   - component: {fileID: 423974583}
   - component: {fileID: 423974587}
+  - component: {fileID: 423974588}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -992,6 +993,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07, y: 2, z: 4.05}
   m_Center: {x: -2.63, y: -1.04, z: -5.25}
+--- !u!114 &423974588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423974582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df46337b71693e46a401ec202fb8cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &450552493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,8 +1508,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601274816}
-  m_LocalRotation: {x: -0.11346567, y: -0.63962585, z: -0.11583726, w: 0.7513894}
-  m_LocalPosition: {x: -3.1368203, y: 0.5352875, z: 9.437958}
+  m_LocalRotation: {x: 0.1098167, y: -0.6700151, z: 0.10118465, w: 0.7271739}
+  m_LocalPosition: {x: 8.578182, y: 2.6602874, z: -0.7030411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1479898223}
