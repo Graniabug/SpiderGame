@@ -6,13 +6,19 @@ public class BirdAttack2 : MonoBehaviour
 {
     public Animator camAnimator; //grab the camera animator
     public Animator birdAnimator;
+    public AudioSource attackSound;
+    public AudioSource leaveSound;
+
+    private bool leavehasPlayed = false;
 
     public void OnTriggerStay(Collider other)
     {
         if(other.gameObject.name == "Spider")
         {
             camAnimator.SetTrigger("ScriptedAttack2START");
+
             birdAnimator.SetTrigger("attack");
+            attackSound.Play();
         }
     }
 
