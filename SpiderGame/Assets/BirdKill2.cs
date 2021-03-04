@@ -12,13 +12,17 @@ public class BirdKill2 : MonoBehaviour
     {
         if(other.gameObject.name == "Spider")
         {
-            float step = speed * Time.deltaTime;
-            spider = other.gameObject.transform;
-            this.gameObject.GetComponent<Animator>().enabled = false;
-            transform.position = Vector3.MoveTowards(transform.position, spider.position, step);
-            Destroy(other.gameObject);
-            deathText.SetActive(true);
-            this.gameObject.transform.position = other.transform.position;
+            if(other.gameObject.GetComponent<SpiderMove>().safe == false)
+            {
+                float step = speed * Time.deltaTime;
+                spider = other.gameObject.transform;
+                this.gameObject.GetComponent<Animator>().enabled = false;
+                transform.position = Vector3.MoveTowards(transform.position, spider.position, step);
+                Destroy(other.gameObject);
+                deathText.SetActive(true);
+                this.gameObject.transform.position = other.transform.position;
+            }
+
         }
     }
 }

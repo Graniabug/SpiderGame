@@ -34,6 +34,7 @@ public class SpiderMove : MonoBehaviour
     private Rigidbody rb;
     private float distToGround;
     private bool haveJumped = false;
+    public bool safe = false;
 
     void Start()
     {
