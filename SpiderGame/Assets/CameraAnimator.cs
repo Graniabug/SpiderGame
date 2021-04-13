@@ -7,7 +7,13 @@ public class CameraAnimator : MonoBehaviour
     public string enterTrigger;
     public string exitTrigger;
 
+    public bool enemyEncounter;
+
+    public string encounterTriggerEnter;
+    public string encounterTriggerExit;
+
     public Animator camAnimator;
+    public Animator enemyAnimator;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +21,12 @@ public class CameraAnimator : MonoBehaviour
         {
             camAnimator.SetTrigger(enterTrigger);
             camAnimator.ResetTrigger(exitTrigger);
+
+            if(enemyEncounter == true) //if this is also an enemy encounter
+            {
+                enemyAnimator.SetTrigger(encounterTriggerEnter);
+                enemyAnimator.ResetTrigger(encounterTriggerExit);
+            }
         }
     }
 
@@ -24,6 +36,12 @@ public class CameraAnimator : MonoBehaviour
         {
             camAnimator.SetTrigger(exitTrigger);
             camAnimator.ResetTrigger(enterTrigger);
+
+            if(enemyEncounter == true)
+            {
+                enemyAnimator.SetTrigger(encounterTriggerExit);
+                enemyAnimator.ResetTrigger(encounterTriggerEnter);
+            }
         }
     }
 }

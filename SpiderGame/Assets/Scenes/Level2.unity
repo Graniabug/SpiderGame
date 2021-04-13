@@ -854,7 +854,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: HB1Enter
   exitTrigger: HB1Exit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!65 &226039567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2359,7 +2363,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: HB2Enter
   exitTrigger: HB2Exit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!1 &649517178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2907,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: HB3Enter
   exitTrigger: HB3Exit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!1 &700277087
 GameObject:
   m_ObjectHideFlags: 3
@@ -5081,7 +5093,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: LA1Enter
   exitTrigger: LA1Exit
+  enemyEncounter: 1
+  encounterTriggerEnter: LizardEncounter
+  encounterTriggerExit: N/A
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 1381252955}
 --- !u!65 &1164729194
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5115,7 +5131,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: HB3HoleEnter
   exitTrigger: HB3HoleExit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!65 &1190613501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5456,7 +5476,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: LA2Enter
   exitTrigger: LA2Exit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!65 &1227366125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6399,6 +6423,151 @@ Transform:
   m_Father: {fileID: 798170766}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1381252954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1381252960}
+  - component: {fileID: 1381252959}
+  - component: {fileID: 1381252958}
+  - component: {fileID: 1381252957}
+  - component: {fileID: 1381252956}
+  - component: {fileID: 1381252955}
+  - component: {fileID: 1381252961}
+  m_Layer: 0
+  m_Name: LizardEnemy1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1381252955
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1bbac029dbf2a442832581a8fd99109, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &1381252956
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e438c85723b605b45ba6a51a9059e78d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!136 &1381252957
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1381252958
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1381252959
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1381252960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_LocalRotation: {x: -0.6991436, y: -0, z: -0, w: 0.7149814}
+  m_LocalPosition: {x: 12, y: -2.0772078, z: 2.23}
+  m_LocalScale: {x: 1.4506, y: 4.5341425, z: 1.4506004}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: -88.717, y: 0, z: 0}
+--- !u!114 &1381252961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381252954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0fe11f993b55b47bc6e85d34cdce51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400649171
 GameObject:
   m_ObjectHideFlags: 3
@@ -6950,7 +7119,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterTrigger: HB4Enter
   exitTrigger: HB4Exit
+  enemyEncounter: 0
+  encounterTriggerEnter: 
+  encounterTriggerExit: 
   camAnimator: {fileID: 7295418}
+  enemyAnimator: {fileID: 0}
 --- !u!65 &1563563344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8012,6 +8185,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e4e9510b15b794c8761ae4668674c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1788414535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1788414538}
+  - component: {fileID: 1788414537}
+  - component: {fileID: 1788414536}
+  m_Layer: 0
+  m_Name: LizardEnemy2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1788414536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788414535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0fe11f993b55b47bc6e85d34cdce51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1788414537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788414535}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.16, y: 8.87, z: 6.41}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1788414538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788414535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 74.53665, y: -17.02782, z: 1.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792871649
 GameObject:
   m_ObjectHideFlags: 0
@@ -8460,6 +8690,7 @@ GameObject:
   - component: {fileID: 1939831515}
   - component: {fileID: 1939831514}
   - component: {fileID: 1939831513}
+  - component: {fileID: 1939831516}
   m_Layer: 2
   m_Name: Ground (9)
   m_TagString: Untagged
@@ -8543,6 +8774,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939831511}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1939831516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939831511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: -0.00000047683716, y: 0, z: 0.000000044703484}
 --- !u!1 &1951957537
 GameObject:
   m_ObjectHideFlags: 0
