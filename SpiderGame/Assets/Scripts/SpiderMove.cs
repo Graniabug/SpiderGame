@@ -36,6 +36,8 @@ public class SpiderMove : MonoBehaviour
     private bool haveJumped = false;
     public bool safe = false;
 
+    public Animator spiderAnimator;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -56,6 +58,7 @@ public class SpiderMove : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     haveJumped = true;
+                    spiderAnimator.SetBool("Jumping", true);
                 }
             }
 
@@ -70,12 +73,24 @@ public class SpiderMove : MonoBehaviour
             // Move the spider
             characterController.Move(moveDirection * Time.deltaTime);
 
+            if (Input.GetAxis("Horizontal") != 0.0f)
+            {
+                spiderAnimator.SetBool("Walking", true);
+            }
+
+            else
+            {
+                spiderAnimator.SetBool("Walking", false);
+            }
+
             Swing();
 
             //update length of web
             web.SetPosition(0, this.transform.position);
             web.SetPosition(1, hookAnchor.transform.position);
         }
+
+        spiderAnimator.SetBool("Jumping", false);
     }
 
     private void FixedUpdate()
