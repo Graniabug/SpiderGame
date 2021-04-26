@@ -128,6 +128,8 @@ public class SpiderMove : MonoBehaviour
                     ropeLength = dist;
                     canGrapple = true;
                     Swinging = true;
+                    spiderAnimator.SetTrigger("Web");
+                    spiderAnimator.SetBool("Swinging", true);
                 }
             }
         }
@@ -179,6 +181,7 @@ public class SpiderMove : MonoBehaviour
             web.enabled = false;
             canGrapple = false;
             Swinging = false;
+            spiderAnimator.SetBool("Swinging", false);
         }
     }
 
