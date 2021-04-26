@@ -8,6 +8,7 @@ public class BirdKill2 : MonoBehaviour
     public float speed = 5.0f;
     public Transform spider;
     public AudioSource attackSound;
+    public Animator birdAnimator;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -23,6 +24,7 @@ public class BirdKill2 : MonoBehaviour
                 deathText.SetActive(true);
                 this.gameObject.transform.position = other.transform.position;
                 attackSound.Play();
+                birdAnimator.SetTrigger("Attack");
             }
 
         }
