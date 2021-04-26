@@ -58,7 +58,7 @@ public class SpiderMove : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;
                     haveJumped = true;
-                    spiderAnimator.SetBool("Jumping", true);
+                    spiderAnimator.SetTrigger("Jump");
                 }
             }
 
@@ -89,8 +89,6 @@ public class SpiderMove : MonoBehaviour
             web.SetPosition(0, this.transform.position);
             web.SetPosition(1, hookAnchor.transform.position);
         }
-
-        spiderAnimator.SetBool("Jumping", false);
     }
 
     private void FixedUpdate()
