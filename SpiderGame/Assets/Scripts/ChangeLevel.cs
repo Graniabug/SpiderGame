@@ -22,7 +22,7 @@ public class ChangeLevel : MonoBehaviour
             //move workward a level
             currentScene++;
 
-            if (currentScene < 4)
+            if (currentScene < 3)
             {
                 File.WriteAllText(myFilePath, string.Empty);
                 //save

@@ -3167,6 +3167,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1892874533191722442, guid: 6e5dcb635998f8d459f91bf03ac11247,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.07
+      objectReference: {fileID: 0}
     - target: {fileID: 2147775183956667090, guid: 6e5dcb635998f8d459f91bf03ac11247,
         type: 3}
       propertyPath: camAnimator
@@ -3246,6 +3251,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061453180856358039, guid: 6e5dcb635998f8d459f91bf03ac11247,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098395255440789081, guid: 6e5dcb635998f8d459f91bf03ac11247,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098395255440789081, guid: 6e5dcb635998f8d459f91bf03ac11247,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.416
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5dcb635998f8d459f91bf03ac11247, type: 3}
