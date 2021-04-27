@@ -3066,6 +3066,19 @@ MonoBehaviour:
   encounterTriggerExit: NA
   camAnimator: {fileID: 7295418}
   enemyAnimator: {fileID: 1381252955}
+--- !u!65 &2101487613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101487611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013061693, y: 0.01, z: 0.023739446}
+  m_Center: {x: 0, y: -0.0029, z: 0}
 --- !u!1 &2109741636
 GameObject:
   m_ObjectHideFlags: 3
